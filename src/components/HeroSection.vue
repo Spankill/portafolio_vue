@@ -19,7 +19,7 @@ import hero from '../assets/heroimage.png'
                         <div class="lg:py-6 flex flex-col justify-center items-center lg:items-start">
                               <div class="text-center lg:text-left">
                                     <h1 class="text-white font-bold text-3xl md:text-5xl lg:text-6xl">
-                                          HOLA, SOY<span class="text-transparent bg-clip-text bg-linear-to-r from-primary to-red-500 "> C@RL!TO$</span>      
+                                          HOLA, SOY<span class="text-transparent bg-clip-text bg-linear-to-r from-primary to-red-500 "> C@RL!TO$</span>👋🏻      
                                     </h1>
                               </div>
 
@@ -28,15 +28,25 @@ import hero from '../assets/heroimage.png'
                               </p>
                               
                               <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
+                                    <!-- boton HIRE ME -->
+                                    <button class="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
+                                          <span class="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent">
+                                          </span>
+                                          <span class="relative flex items-center justify-center text-white">
+                                                HIRE ME
+                                          </span>
+                                    </button>
+                                    
                                     <a href="/resume.pdf" download="resume.pdf" class="w-full sm:w-max block">
-                                          <button class="border border-primary px-6 py-6 rounded-full flex items-center justify-center gap-2 group hover:bg-primary/10 transition-all duration-300 w-full sm:w-max">
+                                          
+                                          <button class="border border-primary px-6 py-3 rounded-full flex items-center justify-center gap-2 group hover:bg-primary/10 transition-all duration-300 w-full sm:w-max">
                                                 <!-- contenedor del icono -->
                                                 <div class="flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                                                       <!-- icono -->
                                                       <Download :size="18" class="text-primary" />
                                                 </div>
                                                 <!-- texto -->
-                                                <span class="text-primary font-mediu transition-transform duration-300 group-hover:scale-105">
+                                                <span class="text-primary font-medium transition-transform duration-300 group-hover:scale-105">
                                                       Download CV
                                                 </span>
                                           </button>
@@ -44,12 +54,12 @@ import hero from '../assets/heroimage.png'
                               </div>
                         </div>
                               <!-- imagen -->
-                              <div class="lg:h-full h-96 min-h-96 lg:min-h-[none] lg:w-full items-center relative">
-                                    <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20)] bg-linear-to-tr opacity-25 from-[#0cac24] to-primary blur-2xl">
+                              <div class="lg:h-full h-96 min-h-96 lg:min-h-[none] lg:w-full flex items-center justify-center lg:justify-end relative">
+                                    <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-linear-to-tr opacity-25 from-[#0cac24] to-primary blur-2xl rounded-full">
                                     </div>
                                     <div 
                                     :style="{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }"
-                                    class="relative z-10 p-2 shadow-lg border border-primary overflow-hidden max-w-[400px] lg:max-w-[500px]">
+                                    class="relative z-10 p-2 shadow-lg border border-primary overflow-hidden max-w-100 lg:max-w-125">
                                           <img :src="hero" alt="Heroimage" 
                                           width="500" height="auto" loading="lazy"
                                           :style="{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }"

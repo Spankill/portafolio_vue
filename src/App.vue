@@ -1,6 +1,8 @@
 <script setup>
 import Header from './components/Header.vue';
 import HeroSection from './components/HeroSection.vue';
+import Education from './components/Education.vue';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { onMounted } from 'vue';
@@ -22,6 +24,7 @@ onMounted(() => {
 
     <Header></Header>
     <HeroSection></HeroSection>
+    <Education></Education>
 
   </div>
 </template>
